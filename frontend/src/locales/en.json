@@ -1,0 +1,103 @@
+{
+  "navbar": {
+    "laundry_system": "LAUNDRY SYSTEM",
+    "dashboard": "Dashboard",
+    "entries": "All Entries",
+    "new_entry": "New Entry",
+    "settings": "Settings ⚙️",
+    "logout": "Logout",
+    "admin_login": "Admin Login"
+  },
+  "login": {
+    "title": "Admin Authentication",
+    "subtitle": "Sign in to manage laundry operations",
+    "username": "Username",
+    "password": "Password",
+    "btn": "Sign In"
+  },
+  "dashboard": {
+    "title": "Laundry Dashboard",
+    "subtitle": "Real-time overview of all laundry operations",
+    "total_clothes": "Total Clothes",
+    "total_orders": "Total Orders",
+    "submitted": "Submitted",
+    "washing": "Washing",
+    "ready": "Ready",
+    "collected": "Collected"
+  },
+  "entries": {
+    "title": "All Laundry Entries",
+    "subtitle": "Manage and track all laundry orders",
+    "search_reg_placeholder": "Search by Reg No...",
+    "search_name_placeholder": "Search by Name...",
+    "all_statuses": "All Statuses",
+    "tbl_reg_no": "Reg No",
+    "tbl_customer": "Customer",
+    "tbl_clothes": "Clothes",
+    "tbl_status": "Status",
+    "tbl_date": "Date",
+    "tbl_actions": "Actions",
+    "no_orders": "No orders found.",
+    "view": "View"
+  },
+  "create": {
+    "title": "New Laundry Order",
+    "subtitle": "Fill in customer and order details",
+    "back": "← Back",
+    "customer_info": "👤 Customer Information",
+    "reg_no": "Registration Number *",
+    "reg_no_placeholder": "e.g. PU-12345",
+    "full_name": "Full Name (optional)",
+    "phone": "Phone (10 digits) *",
+    "order_details": "🧺 Order Details",
+    "clothes_count": "Number of Clothes *",
+    "notes": "Initial Notes (optional)",
+    "btn_submit": "🧺 Create Order",
+    "preview_title": "Order Preview",
+    "preview_reg": "Reg. No.",
+    "preview_customer": "Customer",
+    "preview_phone": "Phone",
+    "preview_clothes": "Clothes Count",
+    "preview_status": "Initial Status",
+    "preview_notes": "Notes",
+    "waiting_input": "Waiting for input..."
+  },
+  "detail": {
+    "title": "Order Details",
+    "subtitle": "Registration",
+    "back": "← Back to Entries",
+    "update_status": "Update Status",
+    "btn_update": "Update Status",
+    "danger_zone": "Danger Zone",
+    "delete_order": "Delete Order",
+    "btn_delete": "Delete Order",
+    "info_customer": "Customer Information",
+    "info_phone": "Phone",
+    "info_order": "Order Information",
+    "info_clothes": "Total Clothes",
+    "info_date": "Created Date",
+    "timeline": "Status Timeline"
+  },
+  "track": {
+    "hero_title": "Track Your Laundry",
+    "hero_subtitle": "Enter your registration number to check the real-time status of your laundry bag.",
+    "search_placeholder": "e.g. LND-2024-00042",
+    "btn_track": "Track Status",
+    "status_info": "Status Information",
+    "current_status": "Current Status",
+    "clothes_count": "Clothes Count",
+    "timeline": "Timeline"
+  },
+  "settings": {
+    "title": "Admin Settings",
+    "subtitle": "Manage your account credentials and data",
+    "update_profile": "Update Profile",
+    "current_password": "Current Password *",
+    "new_username": "New Username (optional)",
+    "new_password": "New Password (optional)",
+    "btn_save": "Save Changes",
+    "danger_zone": "Danger Zone",
+    "danger_info": "Deleting your account will permanently remove your admin access and delete all laundry orders associated with this account.",
+    "btn_delete": "Permanently Delete Account"
+  }
+}

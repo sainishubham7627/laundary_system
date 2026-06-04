@@ -1,0 +1,154 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ── Top Bar ────────────────────────────────────────────────────────────────── */
+.header-top {
+  background: #ffffff;
+  padding: 12px 0;
+  border-bottom: 2px solid var(--color-accent); /* Yellow divider line */
+}
+
+.header-top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+}
+
+.pu-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pu-logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pu-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pu-subtitle {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-greeting {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Yellow Accent Button (Like "Apply Now") */
+.btn-accent {
+  background: var(--color-accent);
+  color: #000;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3);
+}
+.btn-accent:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.4);
+  background: #ffca28;
+}
+
+/* ── Bottom Navigation ──────────────────────────────────────────────────────── */
+.navbar-bottom {
+  background: var(--color-primary);
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  padding: 8px 16px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--color-accent); /* Yellow active indicator */
+}
+
+@media (max-width: 768px) {
+  .header-top-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .header-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .navbar-bottom {
+    height: auto;
+    padding: 8px 0;
+  }
+  .navbar-links {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,122 @@
+.create-page {
+  padding: 36px 0 60px;
+}
+
+.create-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.create-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+}
+
+.create-sub {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.create-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Section label (groups form fields) */
+.section-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Form container styled as Menu Card */
+.form-card {
+  background: #ffffff;
+  border-top: 4px solid var(--color-primary);
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: var(--radius-md);
+}
+
+/* Preview styled as Menu Card */
+.create-preview { 
+  position: sticky; 
+  top: 80px; 
+  background: #ffffff;
+  border-left: 4px solid var(--color-accent);
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0 4px 4px 0;
+}
+
+.preview-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  color: #000;
+}
+
+.preview-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.preview-key {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.preview-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.preview-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media (max-width: 900px) {
+  .create-grid { grid-template-columns: 1fr; }
+  .create-preview { position: static; }
+}
+
+@media (max-width: 600px) {
+  .form-row-2 { grid-template-columns: 1fr; }
+  .create-page { padding: 20px 0 40px; }
+}

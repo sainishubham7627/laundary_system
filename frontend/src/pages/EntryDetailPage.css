@@ -1,0 +1,283 @@
+.detail-page {
+  padding: 32px 0 60px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Info card (Poornima Menu Style) */
+.detail-info-card {
+  padding: 28px;
+  background: #ffffff;
+  border-top: 4px solid var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+}
+
+.detail-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detail-reg {
+  display: block;
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.detail-name {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Meta grid */
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.detail-meta-item { display: flex; flex-direction: column; gap: 4px; }
+
+.detail-meta-key {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.detail-meta-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Items table */
+.detail-section-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.detail-items-section { margin-bottom: 24px; }
+
+.detail-items-table { border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--color-border); }
+
+.detail-items-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 80px;
+  padding: 11px 16px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: #ffffff;
+}
+
+.detail-items-row:last-child { border-bottom: none; }
+
+.detail-items-row.header {
+  background: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.row-num {
+  width: 24px; height: 24px;
+  background: rgba(0, 75, 135, 0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.row-qty {
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: right;
+}
+
+.detail-notes {
+  background: #fdfbf7;
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 16px;
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* History timeline */
+.history-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ht-entry {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ht-entry:last-child { border-bottom: none; }
+
+.ht-dot {
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-size: 0.75rem;
+}
+
+.ht-body { flex: 1; }
+
+.ht-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ht-header strong { font-size: 0.9rem; color: var(--text-primary); }
+
+.ht-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.ht-by {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+.ht-notes {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 4px;
+  padding: 6px 10px;
+  background: rgba(0, 75, 135, 0.05);
+  border-left: 2px solid var(--color-primary);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Status Panel */
+.status-panel { 
+  position: sticky; 
+  top: 80px; 
+  padding: 24px;
+  background: #ffffff;
+  border-left: 4px solid var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0 4px 4px 0;
+}
+
+.status-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-timeline-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: var(--text-muted);
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  width: 100%;
+}
+
+.status-timeline-btn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--text-primary);
+}
+
+.status-timeline-btn.done {
+  border-color: var(--color-border);
+  color: var(--text-secondary);
+  background: #f8fafc;
+}
+
+.status-timeline-btn.current {
+  border-color: var(--color-accent);
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 75, 135, 0.15);
+}
+.status-timeline-btn.current .stl-current-tag {
+  color: #ffc107;
+}
+.status-timeline-btn.current .stl-label {
+  color: #ffffff;
+}
+
+.status-timeline-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.stl-icon { font-size: 1.3rem; flex-shrink: 0; }
+
+.stl-info { display: flex; flex-direction: column; }
+
+.stl-label { font-size: 0.95rem; font-weight: 700; color: inherit; }
+
+.stl-current-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .status-panel { position: static; }
+}

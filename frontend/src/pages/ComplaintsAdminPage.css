@@ -1,0 +1,110 @@
+.complaints-admin-page {
+  padding-bottom: 60px;
+}
+
+.complaints-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.complaints-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.complaints-sub {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.complaints-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .complaints-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.complaint-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.complaint-card.announcement {
+  border-left: 5px solid var(--color-primary);
+  background: #f0f7ff;
+}
+
+.complaint-card.student {
+  border-left: 5px solid #dc3545;
+}
+
+.complaint-card.student.resolved {
+  border-left: 5px solid #28a745;
+  opacity: 0.8;
+}
+
+.comp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.comp-sender {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comp-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.comp-message {
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.comp-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Post form */
+.post-form-card {
+  position: sticky;
+  top: 24px;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
