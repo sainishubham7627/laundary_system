@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
+import { Analytics } from '@vercel/analytics/react';
 
 // Pages
 import TrackPage       from './pages/TrackPage';
@@ -38,6 +39,7 @@ const App = () => (
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
+    <Analytics />
   </AuthProvider>
 );
 
