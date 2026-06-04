@@ -3,7 +3,7 @@
  * All requests go through /api (proxied to http://localhost:5000 by Vite).
  */
 
-const BASE_URL = '/api';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://laundary-system-ghff.onrender.com/api';
 
 /** Attach JWT from localStorage to Authorization header */
 const authHeaders = () => {

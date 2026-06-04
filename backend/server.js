@@ -15,7 +15,7 @@ const app = express();
 
 // ── Middleware ────────────────────────────────────────────────────────────────
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite default port
+  origin: '*', // Allow all origins so Vercel can connect
   credentials: true,
 }));
 app.use(express.json());
