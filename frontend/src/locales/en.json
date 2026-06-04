@@ -81,7 +81,7 @@
   "track": {
     "hero_title": "Track Your Laundry",
     "hero_subtitle": "Enter your registration number to check the real-time status of your laundry bag.",
-    "search_placeholder": "e.g. LND-2024-00042",
+    "search_placeholder": "e.g. 18150",
     "btn_track": "Track Status",
     "status_info": "Status Information",
     "current_status": "Current Status",
